@@ -1,0 +1,37 @@
+.wrapper {
+  padding: 20px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 300px;
+  padding: 14px;
+  margin-top: 10px;
+  background: rgb(251, 251, 251);
+}
+.card img {
+  width: 258px;
+  height: 300px;
+  object-fit: cover;
+}
+.cart_btn {
+  border: 0;
+  background: 0;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+.pro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pro2 {
+  display: flex;
+  gap: 10px;
+}

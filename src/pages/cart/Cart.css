@@ -1,0 +1,166 @@
+.pp {
+  font-size: 18px;
+}
+.cart_na {
+  padding-top: 10px;
+}
+.cart_product {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.pro_cart {
+  width: 782px;
+  height: 70px;
+  background: rgb(251, 251, 251);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 15px;
+}
+.img__pro {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 220px;
+}
+.img__pro h4 {
+  color: rgb(61, 61, 61);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.text_p {
+  display: flex;
+  align-items: center;
+  gap: 95px;
+}
+.pro_text {
+  border-bottom: 1px solid rgba(177, 232, 188, 0.5);
+  display: flex;
+  width: 782px;
+  height: 70px;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.pro_cart h3 {
+  color: rgb(114, 114, 114);
+  width: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.btn_count {
+  width: 21.71px;
+  height: 25px;
+  border-radius: 29px;
+  background: linear-gradient(
+    180deg,
+    rgb(70, 163, 88),
+    rgba(70, 163, 88, 0.8) 100%
+  );
+  border: 0;
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.total_pri {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0%;
+}
+.trash {
+  border: 0;
+  background: 0;
+  cursor: pointer;
+}
+.flex_total {
+  margin-top: -25px;
+}
+.price_flex {
+  padding-left: 160px;
+}
+.cart_pro {
+  display: flex;
+  padding-top: 25px;
+  gap: 100px;
+}
+.carts_total {
+  width: 300px;
+  line-height: 3;
+  padding-top: 30px;
+}
+.hr {
+  background: rgb(225, 225, 225);
+}
+.apply {
+  width: 332px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid rgb(70, 163, 88);
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  outline: 0;
+  border: 0;
+}
+.btn_a {
+  width: 102px;
+  height: 40px;
+  border-radius: 0px 3px 3px 0px;
+  border: 0;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  background: rgb(70, 163, 88);
+}
+.big_total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ppp {
+  color: rgb(70, 163, 88);
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.Proceed {
+  width: 332px;
+  height: 40px;
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  border: 0;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  background: rgb(70, 163, 88);
+}
