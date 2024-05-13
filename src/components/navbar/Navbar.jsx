@@ -26,7 +26,9 @@ const Navbar = () => {
             </NavLink>
           </div>
           <div className="a_flex">
-            <a href="">Shop</a>
+            <NavLink to={"/cart"}>
+              <a href="">Shop</a>
+            </NavLink>
           </div>
           <div className="a_flex">
             <a href="">Plant Care</a>
