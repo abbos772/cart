@@ -8,6 +8,7 @@ import {
 } from "../../context/cardslice";
 import trash from "../../img/Trash.png";
 import "../cart/Cart.css";
+import { NavLink } from "react-router-dom";
 const Cart = () => {
   const dispatch = useDispatch();
 
@@ -88,7 +89,9 @@ const Cart = () => {
               <h3>Total</h3>
               <p className="ppp">${totalPrice}</p>
             </div>
-            <button className="Proceed">Proceed To Checkout</button>
+            <NavLink to={"/Admin"}>
+              <button className="Proceed">Proceed To Checkout</button>
+            </NavLink>
           </div>
         </div>
       </div>

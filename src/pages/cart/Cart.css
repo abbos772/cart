@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .pro_cart {
@@ -38,6 +39,7 @@
   display: flex;
   align-items: center;
   gap: 95px;
+  flex-wrap: wrap;
 }
 .pro_text {
   border-bottom: 1px solid rgba(177, 232, 188, 0.5);
@@ -45,12 +47,14 @@
   width: 782px;
   height: 70px;
   padding-top: 10px;
+  flex-wrap: wrap;
   margin-top: 10px;
 }
 .title {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  flex-wrap: wrap;
 }
 .pro_cart h3 {
   color: rgb(114, 114, 114);
@@ -92,6 +96,7 @@
 }
 .flex_total {
   margin-top: -25px;
+  display: flex;
 }
 .price_flex {
   padding-left: 160px;
@@ -100,10 +105,11 @@
   display: flex;
   padding-top: 25px;
   gap: 100px;
+  flex-wrap: wrap;
 }
 .carts_total {
   width: 300px;
-  line-height: 3;
+  line-height: 3.5;
   padding-top: 30px;
 }
 .hr {
@@ -117,6 +123,7 @@
   border-radius: 3px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 input {
   outline: 0;
@@ -163,4 +170,19 @@ input {
   letter-spacing: 0%;
   text-align: center;
   background: rgb(70, 163, 88);
+}
+@media (max-width: 1200px) {
+  .cart_pro {
+    justify-content: center;
+    align-items: center;
+  }
+  .pro_cart {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .flex_total {
+    display: flex;
+    flex-direction: column;
+  }
 }
