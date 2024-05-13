@@ -1,20 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Admin.css";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  incrementCartQuantity,
-  decrementCartQuantity,
-  removeItemFromCart,
-} from "../../context/cardslice";
+import {} from "../../context/cardslice";
 import vica from "../../img/vica.png";
 
 function Admin() {
   const dispatch = useDispatch();
+  const [inputs, setInputs] = useState({});
   const carts = useSelector((s) => s.cart.value);
   const totalPrice = carts?.reduce(
     (sum, itm) => sum + itm.price * itm.quantity,
     0
   );
+  const handleInputChange = (event, inputName) => {
+    const value = event.target.value;
+    setInputs((prevInputs) => ({
+      ...prevInputs,
+      [inputName]: value,
+    }));
+  };
+  const handleButtonClick = () => {
+    console.log(inputs);
+  };
   const cartjs = carts?.map((item) => (
     <div key={item.id} className="wrp">
       <img src={item.images[0]} width={50} alt="" />
@@ -37,21 +44,33 @@ function Admin() {
             <div className="inp1">
               <p>First Name</p>
               <div className="inp">
-                <input type="text" />
+                <input
+                  onChange={(event) => handleInputChange(event, "input1")}
+                  type="text"
+                />
               </div>
               <p>Last Name</p>
               <div className="inp">
-                <input type="text" />
+                <input
+                  onChange={(event) => handleInputChange(event, "input2")}
+                  type="text"
+                />
               </div>
             </div>
             <div className="inp1">
               <p>Age</p>
               <div className="inp">
-                <input type="Number" />
+                <input
+                  onChange={(event) => handleInputChange(event, "input3")}
+                  type="Number"
+                />
               </div>
               <p>Town/City</p>
               <div className="inp">
-                <input type="text" />
+                <input
+                  onChange={(event) => handleInputChange(event, "input4")}
+                  type="text"
+                />
               </div>
             </div>
           </div>
@@ -79,7 +98,9 @@ function Admin() {
               <input type="radio" />
               <p>Cash on delivery</p>
             </div>
-            <button className="Proceed">Place Order</button>
+            <button onClick={handleButtonClick} className="Proceed">
+              Place Order (Submit)
+            </button>
           </div>
         </div>
       </div>

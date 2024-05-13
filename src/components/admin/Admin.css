@@ -1,6 +1,7 @@
 .wrapper_w {
   display: flex;
   gap: 50px;
+  flex-wrap: wrap;
   padding-top: 50px;
 }
 .wrp {
@@ -10,12 +11,14 @@
   display: flex;
   justify-content: space-between;
   padding: 15px;
+  flex-wrap: wrap;
   align-items: center;
 }
 .wrp_flex {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .apply {
   margin-top: 10px;
@@ -51,6 +54,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .inp1 {
   display: flex;
@@ -61,4 +65,14 @@
 }
 .input_lar {
   margin: 20px;
+}
+@media (max-width: 768px) {
+  .inp_flex {
+    align-items: center;
+    justify-content: center;
+  }
+  .wrp_flex {
+    align-items: center;
+    justify-content: center;
+  }
 }
