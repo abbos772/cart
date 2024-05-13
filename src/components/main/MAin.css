@@ -1,0 +1,55 @@
+.main {
+  max-width: 1200px;
+  height: 450px;
+  background: linear-gradient(
+    134.56deg,
+    rgba(245, 245, 245, 0.5) -23.457%,
+    rgba(245, 245, 245, 0.5) 107.508%
+  );
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+.main_text h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 70px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.main_text button {
+  width: 140px;
+  height: 40px;
+  border-radius: 6px;
+  border: 0;
+  background: rgb(70, 163, 88);
+  color: rgb(255, 255, 255);
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.main_text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: 950px;
+    gap: 20px;
+  }
+  .main_img img {
+    width: 380px;
+  }
+}
